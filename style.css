@@ -1,0 +1,132 @@
+*{
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-gap: 10px;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 0.5%;
+    }
+    .item {
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    
+    text-align: center;
+    }
+
+ .create-btn:hover{
+    background-color: rgb(61, 61, 61);
+   
+ }
+ .notification-btn:hover{
+    background-color: rgb(70, 70, 70);
+ }
+
+ .login:hover{
+    background-color: white;
+ }
+.burger:hover{
+    background-color: rgb(59, 59, 59);
+}
+
+.topheading:hover{
+    background-color: rgb(62, 62, 62);
+}
+.mic{
+    background-color: white;
+}
+.mic:hover{
+    background-color: rgb(136, 9, 32);
+}
+.topheading{
+    background-color: rgb(40, 40, 40); 
+}
+.one:hover{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 1.3%;
+    margin-top: 1.5%;
+}
+.one{
+    background-color: none;
+    border: none;
+}
+
+    @media screen and (max-width: 800px) {
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,300px);
+            position: relative;
+           left: -3%;
+        }
+        .leftNav{
+            display: none;
+        }
+        .mic{
+            display: none;
+           }
+         
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 300px);
+            position: relative;
+           left: -1%;
+        }
+       .input{
+        position: relative;
+        left: -10%;
+       }
+       .search-btn{
+        position: relative;
+        left: -10.3%;
+       
+       }
+       .mic{
+        position: relative;
+        left: -10%;
+       }
+    }
+    .btn1{
+        background-color:transparent;
+        border:0.1px solid rgb(59, 59, 59);
+    }
+
+    @media screen and (max-width: 600px) {
+        .search-btn{
+           display: none;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .search-btn{
+           display: none;
+        }
+        .input{
+            display: none;
+        }
+        .login{
+            position: relative;
+            left: 22%;
+        }
+        .notification{
+            position: relative;
+            left: 22%;
+        }
+        .create{
+            position: relative;
+            left: 22%;
+        }
+       .search-btn1{
+        background-image: url('./seach-icon.png');
+       }
+    }
+  
